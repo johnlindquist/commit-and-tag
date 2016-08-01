@@ -39,7 +39,7 @@ async function commitAndTag(
     const remote = await Remote.lookup(repo, "origin");
 
     const tagRef = `refs/tags/${name}`;
-    remote.push([
+    await remote.push([
         "refs/heads/master:refs/heads/master",
         `${tagRef}:${tagRef}`
     ], {
@@ -51,9 +51,10 @@ async function commitAndTag(
             }
         }
     });
+
+    require("openurl").open(`https://embed.plnkr.co/github/johnlindquist/commit-and-tag/${argv.name}`)
 }
 
 
 commitAndTag(nodegit, argv);
 
-require("openurl").open(`https://embed.plnkr.co/github/johnlindquist/commit-and-tag/${argv.name}`)
