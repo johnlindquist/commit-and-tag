@@ -29,8 +29,8 @@
       <file leaf-file-name="commit-and-tag.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/commit-and-tag.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="339">
+              <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -54,7 +54,7 @@
             <state relative-caret-position="1088">
               <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
               <folding>
-                <marker date="1470066170255" expanded="true" signature="26:72" ph="{...}" />
+                <marker date="1470066211449" expanded="true" signature="26:72" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -263,12 +263,12 @@
       <option name="presentableId" value="Default" />
       <updated>1470060857297</updated>
       <workItem from="1470060858540" duration="297000" />
-      <workItem from="1470061166186" duration="4157000" />
+      <workItem from="1470061166186" duration="4186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4454000" />
+    <option name="totallyTimeSpent" value="4483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1662" y="444" width="1544" height="1467" extended-state="0" />
@@ -374,15 +374,15 @@
         <state relative-caret-position="1088">
           <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
           <folding>
-            <marker date="1470066170255" expanded="true" signature="26:72" ph="{...}" />
+            <marker date="1470066211449" expanded="true" signature="26:72" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/commit-and-tag.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        <state relative-caret-position="339">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
           <folding />
         </state>
       </provider>

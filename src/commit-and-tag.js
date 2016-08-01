@@ -37,7 +37,6 @@ async function commitAndTag(
     const tagId = await Tag.create(repo, name, commit, repo.defaultSignature(), name, 1);
 
     const remote = await Remote.lookup(repo, "origin");
-    console.log(remote);
 
     remote.push(["refs/heads/master:refs/heads/master"], {
         callbacks: {
@@ -48,8 +47,6 @@ async function commitAndTag(
             }
         }
     });
-
-    console.log("Tag: ", tagId);
 }
 
 
