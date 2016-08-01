@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /*
  Usage:
  node lib\commit-and-tag.js
