@@ -35,7 +35,7 @@ async function commitAndTag(
 
     const remote = await Remote.lookup(repo, "origin");
 
-    await remote.push(["refs/heads/master:refs/heads/master"], {
+    remote.push(["refs/heads/master:refs/heads/master"], {
         callbacks: {
             credentials: (url, username)=> Cred.sshKeyFromAgent(username)
         }
