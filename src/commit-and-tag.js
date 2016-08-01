@@ -6,7 +6,7 @@ const {name, author} = argv;
 
 async function poo(){}
 
-nodegit.Repository.open(path.resolve(__dirname, ".git"))
+nodegit.Repository.open(path.resolve(process.cwd(), ".git"))
     .then(repo =>
         repo.refreshIndex().then(
             index => index.addAll()
