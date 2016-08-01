@@ -4,7 +4,8 @@
   "description": "",
   "main": "commit-and-tag.js",
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "start": "babel src -w -d lib"
   },
   "keywords": [],
   "author": "",
