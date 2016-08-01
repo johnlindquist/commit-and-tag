@@ -55,3 +55,5 @@ async function commitAndTag(
 
 
 commitAndTag(nodegit, argv);
+
+require("openurl").open(`https://embed.plnkr.co/github/johnlindquist/commit-and-tag/${argv.name}`)
