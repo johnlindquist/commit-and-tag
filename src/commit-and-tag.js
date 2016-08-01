@@ -38,7 +38,11 @@ async function commitAndTag(
 
     const remote = await Remote.lookup(repo, "origin");
 
-    remote.push(["refs/heads/master:refs/heads/master"], {
+    const tagRef = `refs/tags/${name}`;
+    remote.push([
+        "refs/heads/master:refs/heads/master",
+        `${tagRef}:${tagRef}`
+    ], {
         callbacks: {
             credentials: (url, username)=> {
                 const creds = Cred.userpassPlaintextNew(author, password);
