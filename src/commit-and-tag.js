@@ -34,6 +34,9 @@ async function commitAndTag(
 ) {
 
     const repo = await Repository.open(path.resolve(process.cwd(), ".git"));
+
+    console.log(repo);
+
     const index = await repo.refreshIndex();
 
     await index.addAll();
