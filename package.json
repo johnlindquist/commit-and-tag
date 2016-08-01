@@ -1,0 +1,21 @@
+{
+  "name": "commit-and-tag",
+  "version": "1.0.0",
+  "description": "",
+  "main": "commit-and-tag.js",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "nodegit": "^0.14.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-stage-1": "^6.5.0"
+  }
+}
