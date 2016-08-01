@@ -2,10 +2,10 @@
   "name": "commit-and-tag",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/commit-and-tag.js",
+  "main": "./lib/commit-and-tag.js",
   "preferGlobal": true,
   "bin": {
-    "commit-and-tag": "lib/commit-and-tag.js"
+    "commit-and-tag": "./lib/commit-and-tag.js"
   },
   "scripts": {
     "build": "babel src -d lib",
