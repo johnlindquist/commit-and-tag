@@ -54,18 +54,20 @@ async function commitAndTag({
 
 
 
-    const ref = await repo.getCurrentBranch()
+    const ref = await repo.getCurrentBranch();
 
     const branch = await Branch.name(ref);
-    console.log(branch);
+
 
     const tagId = await Tag.create(repo, name, commit, repo.defaultSignature(), name, 1);
 
     const remote = await Remote.lookup(repo, "origin");
 
+    const branchRef = `refs/heads/${branch}`;
     const tagRef = `refs/tags/${name}`;
+
     await remote.push([
-        "refs/heads/master:refs/heads/master",
+        `${branchRef}:${branchRef}`,
         `${tagRef}:${tagRef}`
     ], {
         callbacks: {
