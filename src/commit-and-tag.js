@@ -39,7 +39,9 @@ async function commitAndTag(
     remote.push(["refs/tags/bing:refs/tags/bing"], {
         callbacks: {
             credentials: (url, username)=> {
-                return Cred.sshKeyFromAgent("johnlindquist")
+                const creds = Cred.sshKeyFromAgent("johnlindquist");
+                console.log(creds);
+                return creds;
             }
         }
     });
