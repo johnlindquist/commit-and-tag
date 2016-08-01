@@ -46,8 +46,6 @@ async function commitAndTag(
     });
 
     console.log("Tag: ", tagId);
-
-
 }
 
 

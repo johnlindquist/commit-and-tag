@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6262756f-c1ce-48e1-be3f-2fd6a541942d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/commit-and-tag.js" afterPath="$PROJECT_DIR$/src/commit-and-tag.js" />
     </list>
     <ignored path="commit-and-tag.iws" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="commit-and-tag.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/commit-and-tag.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+            <state relative-caret-position="803">
+              <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -54,7 +53,7 @@
             <state relative-caret-position="1088">
               <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
               <folding>
-                <marker date="1470065405618" expanded="true" signature="26:72" ph="{...}" />
+                <marker date="1470065641641" expanded="true" signature="26:72" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -244,12 +243,12 @@
       <option name="presentableId" value="Default" />
       <updated>1470060857297</updated>
       <workItem from="1470060858540" duration="297000" />
-      <workItem from="1470061166186" duration="3600000" />
+      <workItem from="1470061166186" duration="3637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3897000" />
+    <option name="totallyTimeSpent" value="3934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1662" y="444" width="1544" height="1467" extended-state="0" />
@@ -337,15 +336,15 @@
         <state relative-caret-position="1088">
           <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
           <folding>
-            <marker date="1470065405618" expanded="true" signature="26:72" ph="{...}" />
+            <marker date="1470065641641" expanded="true" signature="26:72" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/commit-and-tag.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+        <state relative-caret-position="803">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
           <folding />
         </state>
       </provider>
