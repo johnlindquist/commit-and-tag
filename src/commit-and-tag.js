@@ -12,8 +12,11 @@ async function commitAndTag(
         Remote,
         Cred
     },
-    name,
-    author
+    {
+        name,
+        author,
+        password
+    }
 ) {
 
     const repo = await Repository.open(path.resolve(process.cwd(), ".git"));
@@ -39,7 +42,7 @@ async function commitAndTag(
     remote.push(["refs/tags/bing:refs/tags/bing"], {
         callbacks: {
             credentials: (url, username)=> {
-                const creds = Cred.sshKeyFromAgent("johnlindquist");
+                const creds = Cred.userpassPlaintextNew(author, password);
                 console.log(creds);
                 return creds;
             }
@@ -50,5 +53,4 @@ async function commitAndTag(
 }
 
 
-const {name, author} = argv;
-commitAndTag(nodegit, name, author);
+commitAndTag(nodegit, argv);
