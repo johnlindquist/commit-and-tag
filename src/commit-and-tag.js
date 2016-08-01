@@ -11,27 +11,23 @@ async function commitAndTag() {
     await index.addAll();
     await index.write();
     const oid = await index.writeTree();
-    nodegit.Reference.nameToId(repo, "HEAD")
-        .then(head => repo.getCommit(head))
-        .then(parent => {
-            const authorSig = nodegit.Signature.create(author,
-                author, Math.round(Date.now() / 1000), 0);
-            const committerSig = nodegit.Signature.create(author,
-                author, Math.round(Date.now() / 1000), 0);
+    const head = await nodegit.Reference.nameToId(repo, "HEAD")
+    const parent = await repo.getCommit(head);
 
-            return repo.createCommit("HEAD", authorSig, committerSig, name, oid, [parent]);
-        })
-        .then(commitId =>
-            nodegit.Commit.lookup(repo, commitId)
-                .then(commit=>
-                    nodegit.Tag.create(repo, name, commit, repo.defaultSignature(), name, 1)
-                )
-        )
+    const authorSig = nodegit.Signature.create(author,
+        author, Math.round(Date.now() / 1000), 0);
+    const committerSig = nodegit.Signature.create(author,
+        author, Math.round(Date.now() / 1000), 0);
+
+    const commitId = await repo.createCommit("HEAD", authorSig, committerSig, name, oid, [parent]);
 
 
-        .done(function (tagId) {
-            console.log("Tag id: ", tagId);
-        });
+    const commit = await nodegit.Commit.lookup(repo, commitId);
+
+    const tagId = await nodegit.Tag.create(repo, name, commit, repo.defaultSignature(), name, 1)
+
+
+    console.log("Tag: ", tagId);
 }
 
 commitAndTag();
