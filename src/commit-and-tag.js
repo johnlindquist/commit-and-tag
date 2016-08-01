@@ -67,10 +67,10 @@ async function commitAndTag(
 
 
 async function go(){
-    const {repo, name} = argv;
+    const {repo, name, author} = argv;
 
     await commitAndTag(nodegit, argv);
-    openurl.open(`https://embed.plnkr.co/github/johnlindquist/${repo}/${name}`)
+    openurl.open(`https://embed.plnkr.co/github/${author}/${repo}/${name}`)
 }
 
 go();
