@@ -35,6 +35,8 @@ async function commitAndTag(
 
     const remote = await Remote.create(repo, "origin", "git@github.com:johnlindquist/commit-and-tag.git");
 
+    console.log(remote);
+
     await remote.push(["refs/heads/master:refs/heads/master"], {
         callbacks: {
             credentials: (url, username)=> Cred.sshKeyFromAgent(username)
@@ -42,6 +44,8 @@ async function commitAndTag(
     });
 
     console.log("Tag: ", tagId);
+
+
 }
 
 
