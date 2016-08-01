@@ -52,7 +52,9 @@ async function commitAndTag({
     const commit = await Commit.lookup(repo, commitId);
 
 
-    Branch.name(commit)
+
+
+    repo.getCurrentBranch()
         .then(name => {
             console.log(name)
         })
