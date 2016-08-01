@@ -1,6 +1,7 @@
 const nodegit = require("nodegit");
 const path = require("path");
 const argv = require('minimist')(process.argv.slice(2));
+const openurl = require("openurl");
 
 async function commitAndTag(
     {
@@ -51,10 +52,17 @@ async function commitAndTag(
             }
         }
     });
-
-    require("openurl").open(`https://embed.plnkr.co/github/johnlindquist/commit-and-tag/${argv.name}`)
 }
 
 
-commitAndTag(nodegit, argv);
+async function go(){
+    const {repo, name} = argv;
+
+    await commitAndTag(nodegit, argv);
+    openurl.open(`https://embed.plnkr.co/github/johnlindquist/${repo}/${name}`)
+}
+
+go();
+
+
 
