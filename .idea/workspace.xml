@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6262756f-c1ce-48e1-be3f-2fd6a541942d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/commit-and-tag.js" afterPath="$PROJECT_DIR$/src/commit-and-tag.js" />
-    </list>
+    <list default="true" id="6262756f-c1ce-48e1-be3f-2fd6a541942d" name="Default" comment="" />
     <ignored path="commit-and-tag.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="commit-and-tag.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/commit-and-tag.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="803">
-              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+            <state relative-caret-position="864">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -48,9 +46,11 @@
       <file leaf-file-name="commit-and-tag.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/commit-and-tag.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1184">
-              <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="1088">
+              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+              <folding>
+                <marker date="1470062536730" expanded="true" signature="26:72" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -236,12 +236,12 @@
       <option name="presentableId" value="Default" />
       <updated>1470060857297</updated>
       <workItem from="1470060858540" duration="297000" />
-      <workItem from="1470061166186" duration="1250000" />
+      <workItem from="1470061166186" duration="2853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1547000" />
+    <option name="totallyTimeSpent" value="3150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1662" y="444" width="1544" height="1467" extended-state="0" />
@@ -324,16 +324,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/commit-and-tag.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1184">
-          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="1088">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+          <folding>
+            <marker date="1470062536730" expanded="true" signature="26:72" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/commit-and-tag.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        <state relative-caret-position="864">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
           <folding />
         </state>
       </provider>
