@@ -1,3 +1,14 @@
+/*
+ Usage:
+ node lib\commit-and-tag.js
+ --author github-username
+ --name tagname
+ --password yourgithubpassword
+ --repo your-reop
+
+ */
+
+
 const nodegit = require("nodegit");
 const path = require("path");
 const argv = require('minimist')(process.argv.slice(2));
