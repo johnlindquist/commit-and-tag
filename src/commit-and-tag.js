@@ -54,11 +54,10 @@ async function commitAndTag({
 
 
 
-    repo.getCurrentBranch()
-        .then(name => {
-            console.log(name)
-        })
-        .catch(err => console.log(err));
+    const ref = await repo.getCurrentBranch()
+
+    const branch = await Branch.name(ref);
+    console.log(branch);
 
     const tagId = await Tag.create(repo, name, commit, repo.defaultSignature(), name, 1);
 
