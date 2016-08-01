@@ -2,7 +2,20 @@ const nodegit = require("nodegit");
 const path = require("path");
 const argv = require('minimist')(process.argv.slice(2));
 
-async function commitAndTag({Repository, Reference, Signature, Commit, Tag}, name, author) {
+async function commitAndTag(
+    {
+        Repository,
+        Reference,
+        Signature,
+        Commit,
+        Tag,
+        Remote,
+        Cred
+    },
+    name,
+    author
+) {
+
     const repo = await Repository.open(path.resolve(process.cwd(), ".git"));
     const index = await repo.refreshIndex();
 
@@ -20,7 +33,13 @@ async function commitAndTag({Repository, Reference, Signature, Commit, Tag}, nam
     const commit = await Commit.lookup(repo, commitId);
     const tagId = await Tag.create(repo, name, commit, repo.defaultSignature(), name, 1);
 
+    const remote = await Remote.create(repo, "origin", "git@github.com:johnlindquist/commit-and-tag.git");
 
+    await remote.push(["refs/heads/master:refs/heads/master"], {
+        callbacks: {
+            credentials: (url, username)=> Cred.sshKeyFromAgent(username)
+        }
+    });
 
     console.log("Tag: ", tagId);
 }
