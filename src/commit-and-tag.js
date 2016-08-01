@@ -53,8 +53,8 @@ async function commitAndTag(
     const commitId = await repo.createCommit("HEAD", authorSig, committerSig, name, oid, [parent]);
     const commit = await Commit.lookup(repo, commitId);
 
-    const branch = await Branch.name(head);
-    console.log(branch);
+
+    Branch.name(head).then(name => console.log(name));
 
     const tagId = await Tag.create(repo, name, commit, repo.defaultSignature(), name, 1);
 
