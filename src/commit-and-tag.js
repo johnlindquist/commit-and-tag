@@ -16,23 +16,21 @@ const path = require("path");
 const argv = require('minimist')(process.argv.slice(2));
 const openurl = require("openurl");
 
-async function commitAndTag(
-    {
-        Repository,
-        Reference,
-        Signature,
-        Commit,
-        Tag,
-        Remote,
-        Cred,
-        Branch
-    },
+async function commitAndTag({
+    Repository,
+    Reference,
+    Signature,
+    Commit,
+    Tag,
+    Remote,
+    Cred,
+    Branch
+},
     {
         name,
         author,
         password
-    }
-) {
+    }) {
 
     const repo = await Repository.open(path.resolve(process.cwd(), ".git"));
 
@@ -54,7 +52,11 @@ async function commitAndTag(
     const commit = await Commit.lookup(repo, commitId);
 
 
-    Branch.name(head).then(name => console.log(name));
+    Branch.name(head)
+        .then(name => {
+            console.log(name)
+        })
+        .catch(err => console.log(err));
 
     const tagId = await Tag.create(repo, name, commit, repo.defaultSignature(), name, 1);
 
@@ -76,7 +78,7 @@ async function commitAndTag(
 }
 
 
-async function go(){
+async function go() {
     const {repo, name, author} = argv;
 
     await commitAndTag(nodegit, argv);
