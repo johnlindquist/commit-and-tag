@@ -39,7 +39,7 @@ async function commitAndTag(
     const remote = await Remote.lookup(repo, "origin");
     console.log(remote);
 
-    remote.push(["refs/tags/bing:refs/tags/bing"], {
+    remote.push(["refs/heads/master:refs/heads/master"], {
         callbacks: {
             credentials: (url, username)=> {
                 const creds = Cred.userpassPlaintextNew(author, password);
