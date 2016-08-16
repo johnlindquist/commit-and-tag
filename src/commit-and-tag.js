@@ -67,8 +67,8 @@ async function commitAndTag({
     const tagRef = `refs/tags/${name}`;
 
     await remote.push([
-        `${branchRef}:${branchRef}`,
-        `${tagRef}:${tagRef}`
+        `+${branchRef}:${branchRef}`,
+        `+${tagRef}:${tagRef}`
     ], {
         callbacks: {
             credentials: (url, username)=> {
