@@ -2,12 +2,11 @@
 
 /*
  Usage:
- node lib\commit-and-tag.js
+ commit-and-tag
  --author github-username
- --name tagname
  --password yourgithubpassword
- --repo your-reop
-
+ --repo your-repo
+ --name tag-name
  */
 
 
@@ -23,8 +22,7 @@ async function commitAndTag({
     Commit,
     Tag,
     Remote,
-    Cred,
-    Branch
+    Cred
 },
     {
         name,
@@ -33,8 +31,6 @@ async function commitAndTag({
     }) {
 
     const repo = await Repository.open(path.resolve(process.cwd(), ".git"));
-
-    console.log(repo);
 
     const index = await repo.refreshIndex();
 
@@ -51,23 +47,17 @@ async function commitAndTag({
     const commitId = await repo.createCommit("HEAD", authorSig, committerSig, name, oid, [parent]);
     const commit = await Commit.lookup(repo, commitId);
 
-
-
-
-    const ref = await repo.getCurrentBranch();
-
-    const branch = await Branch.name(ref);
-
-
     const tagId = await Tag.create(repo, name, commit, repo.defaultSignature(), name, 1);
+
+    console.log(tagId);
 
     const remote = await Remote.lookup(repo, "origin");
 
-    const branchRef = `refs/heads/${branch}`;
     const tagRef = `refs/tags/${name}`;
 
+    console.log(tagRef);
+
     await remote.push([
-        `+${branchRef}:${branchRef}`,
         `+${tagRef}:${tagRef}`
     ], {
         callbacks: {
