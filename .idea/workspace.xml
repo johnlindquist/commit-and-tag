@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6262756f-c1ce-48e1-be3f-2fd6a541942d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/commit-and-tag.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/commit_and_tag_node_modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="commit-and-tag.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -347,7 +338,7 @@
       <workItem from="1471373709538" duration="118000" />
       <workItem from="1471467882664" duration="1665000" />
       <workItem from="1471539436412" duration="9000" />
-      <workItem from="1471539561074" duration="1282000" />
+      <workItem from="1471539561074" duration="1330000" />
     </task>
     <task id="LOCAL-00001" summary="adding forcing">
       <created>1471373812320</created>
@@ -363,11 +354,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471540510558</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cleaning out the .idea dir">
+      <created>1471540857143</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1471540857143</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11992000" />
+    <option name="totallyTimeSpent" value="12040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1023" y="1282" width="1293" height="727" extended-state="0" />
@@ -426,7 +424,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="adding forcing" />
     <MESSAGE value="Now only pushes the tag" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now only pushes the tag" />
+    <MESSAGE value="cleaning out the .idea dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning out the .idea dir" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
